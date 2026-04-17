@@ -1,9 +1,9 @@
-week_id,publish_date,core_theme,platform,content_type,content_id,title_or_hook,primary_goal,status,url,impressions,views,avg_watch_seconds,avg_watch_percent,likes,comments,shares,reposts,saves,profile_visits,link_clicks,dm_count,inquiry_count,booked_calls,paid_conversions,qualitative_notes,next_action
-2026-W16,2026-04-13,subject allocation,YouTube,Long,YT-W01-L01,医学部受験で伸びない人は勉強量ではなく科目配分を見直すべきです,authority,draft,,,,,,,,,,,,,,,,,
-2026-W16,2026-04-14,subject allocation,YouTube,Short,YT-W01-S01,医学部受験生が最初に間違えるのは参考書選びではなく順番です,reach,draft,,,,,,,,,,,,,,,,,
-2026-W16,2026-04-14,subject allocation,TikTok,Short,TT-W01-S01,医学部受験生が最初に間違えるのは参考書選びではなく順番です,reach,draft,,,,,,,,,,,,,,,,,
-2026-W16,2026-04-15,subject allocation,Instagram,Carousel,IG-W01-C01,医学部受験で最初に作るべきは勉強計画ではなく科目配分表,trust,draft,,,,,,,,,,,,,,,,,
-2026-W16,2026-04-15,subject allocation,Instagram,Reel,IG-W01-R01,数学をやりすぎると医学部は落ちることがあります,reach,draft,,,,,,,,,,,,,,,,,
-2026-W16,2026-04-16,subject allocation,X,Single,X-W01-P01,医学部受験は努力量より配分で差がつく,demand-test,draft,,,,,,,,,,,,,,,,,
-2026-W16,2026-04-16,subject allocation,X,Thread,X-W01-T01,1週間の予定は科目ではなく目的で切ると崩れにくい,demand-test,draft,,,,,,,,,,,,,,,,,
-2026-W16,2026-04-17,subject allocation,Link,CTA,CTA-W01-01,より具体的に配分を詰めたい人はプロフィールの相談導線へ,conversion,active,,,,,,,,,,,,,,,,,
+week_id,publish_date,content_layer,core_theme,platform,content_type,content_id,source_longform_id,title_or_hook,primary_goal,status,url,impressions,views,click_through_rate,avg_watch_seconds,avg_watch_percent,subscribers_gained_7d,returning_viewers,next_long_clicks,youtube_clicks,likes,comments,shares,reposts,saves,profile_visits,link_clicks,dm_count,inquiry_count,booked_calls,paid_conversions,qualitative_notes,next_action
+2026-W16,2026-04-13,高校理系ブリッジ,subject allocation,YouTube,Long,YT-W01-L01,YT-W01-L01,理系再建で伸びない人は勉強量ではなく科目配分を見直すべきです,subscription,draft,,,,,,,,,,,,,,,,,,,,,,,
+2026-W16,2026-04-14,高校理系ブリッジ,subject allocation,YouTube,Short,YT-W01-S01,YT-W01-L01,理系が崩れる人が最初に間違えるのは参考書選びではなく順番です,reach,draft,,,,,,,,,,,,,,,,,,,,,,,
+2026-W16,2026-04-14,高校理系ブリッジ,subject allocation,TikTok,Short,TT-W01-S01,YT-W01-L01,理系が崩れる人が最初に間違えるのは参考書選びではなく順番です,reach,draft,,,,,,,,,,,,,,,,,,,,,,,
+2026-W16,2026-04-15,高校理系ブリッジ,subject allocation,Instagram,Carousel,IG-W01-C01,YT-W01-L01,理系再建で最初に作るべきは勉強計画ではなく科目配分表,support,draft,,,,,,,,,,,,,,,,,,,,,,,
+2026-W16,2026-04-15,高校理系ブリッジ,subject allocation,Instagram,Reel,IG-W01-R01,YT-W01-L01,数学だけやると理系はむしろ崩れます,reach,draft,,,,,,,,,,,,,,,,,,,,,,,
+2026-W16,2026-04-16,高校理系ブリッジ,subject allocation,X,Single,X-W01-P01,YT-W01-L01,理系再建は努力量より配分で差がつく,reach,draft,,,,,,,,,,,,,,,,,,,,,,,
+2026-W16,2026-04-16,高校理系ブリッジ,subject allocation,X,Thread,X-W01-T01,YT-W01-L01,1週間の予定は科目ではなく目的で切ると崩れにくい,reach,draft,,,,,,,,,,,,,,,,,,,,,,,
+2026-W16,2026-04-17,高校理系ブリッジ,subject allocation,Link,CTA,CTA-W01-01,YT-W01-L01,まずは長尺で理解をつないでください。必要ならプロフィールの導線も使えます。,secondary-conversion,active,,,,,,,,,,,,,,,,,,,,,,,
