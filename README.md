@@ -11,7 +11,7 @@
 - `02_content_os/packages/week_01_subject_allocation.md`
   - `高校理系ブリッジ` の初週長尺として使える実戦パッケージ
 - `03_analytics_os/post_log.csv`
-  - 投稿・長尺資産・回遊・相談の補助指標を追うためのログ
+  - 投稿・登録・CTR・回遊・相談の補助指標を追うためのログ
 - `03_analytics_os/weekly_review.md`
   - 週末レビューのテンプレート
 - `04_codex_os/codex_playbook.md`
