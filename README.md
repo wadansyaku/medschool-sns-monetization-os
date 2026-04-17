@@ -9,9 +9,9 @@
 - `02_content_os/content_os.md`
   - コンテンツ柱、12週間ロードマップ、再利用ルール、制作チェックリスト
 - `02_content_os/packages/week_01_subject_allocation.md`
-  - 初週の核テーマをそのまま制作に使える実戦パッケージ
+  - `高校理系ブリッジ` の初週長尺として使える実戦パッケージ
 - `03_analytics_os/post_log.csv`
-  - 投稿・相談導線・成約まで追うためのログ
+  - 投稿・長尺資産・回遊・相談の補助指標を追うためのログ
 - `03_analytics_os/weekly_review.md`
   - 週末レビューのテンプレート
 - `04_codex_os/codex_playbook.md`
@@ -45,7 +45,7 @@
 ## 最初の60分でやること
 
 1. `01_strategy/strategy_hub.md` のプロフィール文と CTA 方針を見て、各アカウントの説明文を整える
-2. `02_content_os/packages/week_01_subject_allocation.md` を見て、初週の長尺企画と短尺4本を収録する
+2. `02_content_os/packages/week_01_subject_allocation.md` を見て、`高校理系ブリッジ` の初週長尺と短尺4本を収録する
 3. `03_analytics_os/post_log.csv` に今週分の行をコピーして、記録の土台を作る
 4. まず YouTube 長尺の視聴導線を整え、そのうえで必要なら相談導線を 1 つに絞る
 
