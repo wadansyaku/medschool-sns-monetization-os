@@ -1,13 +1,22 @@
 import React from "react";
 import { AbsoluteFill, Sequence, interpolate, useCurrentFrame } from "remotion";
 import { AnimatedTextBlock, Badge, Card, ProgressRail, VideoShell, accentColor, palette } from "../components/VideoShell";
-import { LONGFORM_DURATION, week01Longform } from "../data/week01";
+import { LONGFORM_DURATION } from "../data/week01";
+import type { LongformVideo } from "../data/week01";
 
 const sceneDuration = 360;
 const introDuration = 300;
 const outroDuration = 150;
 
-export const BridgeLongform: React.FC = () => {
+export const BridgeLongform: React.FC<LongformVideo> = ({
+  kicker,
+  title,
+  subtitle,
+  promise,
+  cta,
+  nextVideoLabel,
+  scenes,
+}) => {
   const frame = useCurrentFrame();
 
   return (
@@ -27,7 +36,7 @@ export const BridgeLongform: React.FC = () => {
             justifyContent: "space-between",
           }}
         >
-          <Badge text={week01Longform.kicker} accent="vermilion" />
+          <Badge text={kicker} accent="vermilion" />
           <div
             style={{
               width: 360,
@@ -41,16 +50,16 @@ export const BridgeLongform: React.FC = () => {
         </div>
 
         <Sequence durationInFrames={introDuration}>
-          <IntroScene />
+          <IntroScene title={title} subtitle={subtitle} promise={promise} />
         </Sequence>
 
-        {week01Longform.scenes.map((scene, index) => {
+        {scenes.map((scene, index) => {
           const from = introDuration + index * sceneDuration;
           return (
             <Sequence key={scene.headline} from={from} durationInFrames={sceneDuration}>
               <ContentScene
                 index={index}
-                total={week01Longform.scenes.length}
+                total={scenes.length}
                 metric={scene.metric}
                 accent={scene.accent}
                 eyebrow={scene.eyebrow}
@@ -62,17 +71,21 @@ export const BridgeLongform: React.FC = () => {
         })}
 
         <Sequence
-          from={introDuration + week01Longform.scenes.length * sceneDuration}
+          from={introDuration + scenes.length * sceneDuration}
           durationInFrames={outroDuration}
         >
-          <OutroScene />
+          <OutroScene cta={cta} nextVideoLabel={nextVideoLabel} />
         </Sequence>
       </AbsoluteFill>
     </VideoShell>
   );
 };
 
-const IntroScene: React.FC = () => {
+const IntroScene: React.FC<{
+  title: string;
+  subtitle: string;
+  promise: string;
+}> = ({ title, subtitle, promise }) => {
   const frame = useCurrentFrame();
   const leftShift = interpolate(frame, [0, 70], [28, 0], {
     extrapolateLeft: "clamp",
@@ -123,7 +136,7 @@ const IntroScene: React.FC = () => {
               fontWeight: 950,
             }}
           >
-            {week01Longform.title}
+            {title}
           </div>
           <div
             style={{
@@ -134,7 +147,7 @@ const IntroScene: React.FC = () => {
               maxWidth: 720,
             }}
           >
-            {week01Longform.subtitle}
+            {subtitle}
           </div>
         </div>
       </Card>
@@ -173,7 +186,7 @@ const IntroScene: React.FC = () => {
                 fontWeight: 800,
               }}
             >
-              {week01Longform.promise}
+              {promise}
             </div>
           </div>
           <div
@@ -337,7 +350,10 @@ const ContentScene: React.FC<{
   );
 };
 
-const OutroScene: React.FC = () => {
+const OutroScene: React.FC<{
+  cta: string;
+  nextVideoLabel: string;
+}> = ({ cta, nextVideoLabel }) => {
   const frame = useCurrentFrame();
   const fade = interpolate(frame, [0, 35], [0, 1], {
     extrapolateLeft: "clamp",
@@ -373,19 +389,17 @@ const OutroScene: React.FC = () => {
               fontWeight: 900,
             }}
           >
-            Next Longform
+            次に見る長尺
           </div>
           <div
             style={{
-              fontSize: 72,
-              lineHeight: 1.02,
+              fontSize: 58,
+              lineHeight: 1.08,
               fontWeight: 950,
               letterSpacing: "-0.06em",
             }}
           >
-            勉強量を足す前に、
-            <br />
-            配分と接続を見直す。
+            {nextVideoLabel}
           </div>
           <div
             style={{
@@ -396,7 +410,7 @@ const OutroScene: React.FC = () => {
               maxWidth: 780,
             }}
           >
-            {week01Longform.cta}
+            {cta}
           </div>
         </div>
       </Card>

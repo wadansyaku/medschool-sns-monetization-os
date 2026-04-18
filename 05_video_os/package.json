@@ -1,17 +1,18 @@
 {
   "name": "05_video_os",
   "version": "1.0.0",
-  "description": "My Remotion video",
+  "description": "Remotion workspace for 理系再建ラボ video production",
   "repository": {},
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.448",
+    "@remotion/tailwind-v4": "4.0.448",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.448",
-    "@remotion/tailwind-v4": "4.0.448",
-    "tailwindcss": "4.0.0"
+    "tailwindcss": "4.0.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.448",
@@ -25,7 +26,12 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "still:long:cover": "remotion still W01BridgeLong out/w01-long-cover.png --frame=45",
+    "still:long:scene": "remotion still W01BridgeLong out/w01-long-scene.png --frame=620",
+    "still:short01": "remotion still W01BridgeShort01 out/w01-short-01.png --frame=60",
+    "render:short01": "remotion render W01BridgeShort01 out/w01-short-01.mp4",
+    "render:long:draft": "remotion render W01BridgeLong out/w01-long-draft.mp4 --scale=0.5"
   },
   "sideEffects": [
     "*.css"
