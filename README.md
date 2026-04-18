@@ -24,6 +24,8 @@
   - Codex / Atlas / GitHub で出た改善案を、採用可否つきで残すログ
 - `.github/pull_request_template.md`
   - GitHub で週次パッケージをレビューするための PR テンプレート
+- `05_video_os/`
+  - Remotion で長尺と短尺を生成する動画制作基盤
 
 ## 運用の基本単位
 
@@ -48,6 +50,12 @@
 2. `02_content_os/packages/week_01_subject_allocation.md` を見て、`高校理系ブリッジ` の初週長尺と短尺4本を収録する
 3. `03_analytics_os/post_log.csv` に今週分の行をコピーして、記録の土台を作る
 4. まず YouTube 長尺の視聴導線を整え、そのうえで必要なら相談導線を 1 つに絞る
+
+## 動画制作
+
+- `05_video_os/` で Remotion Studio を起動し、長尺と短尺の静止画確認と mp4 レンダリングを行う
+- まず静止画でレイアウトを確認し、その後に mp4 を書き出す
+- 外部生成が必要な素材だけを Runway などに切り出し、長尺の主張自体は repo 側で固定する
 
 ## GitHub / Atlas 連携
 
