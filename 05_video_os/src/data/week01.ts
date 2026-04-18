@@ -1,27 +1,47 @@
-export type LongformScene = {
-  headline: string;
-  eyebrow: string;
-  bullets: string[];
-  metric: string;
-  accent: "vermilion" | "teal" | "blue";
-};
+import { z } from "zod";
 
-export type ShortScript = {
-  id: string;
-  label: string;
-  hook: string;
-  points: string[];
-  close: string;
-  accent: "vermilion" | "teal" | "blue";
-};
+const accentSchema = z.enum(["vermilion", "teal", "blue"]);
 
-export const week01Longform = {
+export const LongformSceneSchema = z.object({
+  headline: z.string(),
+  eyebrow: z.string(),
+  bullets: z.array(z.string()).min(1),
+  metric: z.string(),
+  accent: accentSchema,
+});
+
+export const LongformVideoSchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  subtitle: z.string(),
+  kicker: z.string(),
+  promise: z.string(),
+  cta: z.string(),
+  nextVideoLabel: z.string(),
+  scenes: z.array(LongformSceneSchema).min(1),
+});
+
+export const ShortScriptSchema = z.object({
+  id: z.string(),
+  label: z.string(),
+  hook: z.string(),
+  points: z.array(z.string()).min(1),
+  close: z.string(),
+  accent: accentSchema,
+});
+
+export type LongformScene = z.infer<typeof LongformSceneSchema>;
+export type LongformVideo = z.infer<typeof LongformVideoSchema>;
+export type ShortScript = z.infer<typeof ShortScriptSchema>;
+
+export const week01Longform: LongformVideo = {
   id: "W01BridgeLong",
   title: "理系再建は配分から始まる",
   subtitle: "数学・物理・化学をつなぎ直す最初の1週間",
   kicker: "高校理系ブリッジ / Week 01",
   promise: "努力不足ではなく設計不足を見せる",
-  cta: "まずは長尺で理解をつないで、必要なら次の導線へ。",
+  cta: "まずは長尺で理解をつなぎ、次の長尺へ進める状態を作る。",
+  nextVideoLabel: "次回: 数学だけやると理系が崩れる理由",
   scenes: [
     {
       eyebrow: "Problem",
@@ -78,7 +98,7 @@ export const week01Longform = {
       metric: "Focus 05 / Next Step",
       accent: "teal",
     },
-  ] satisfies LongformScene[],
+  ],
 };
 
 export const week01Shorts: ShortScript[] = [
@@ -128,6 +148,7 @@ export const week01Shorts: ShortScript[] = [
   },
 ];
 
+// Visual QA 用の draft cut。公開用の本編尺そのものではなく、構図と情報密度を先に詰める。
 export const LONGFORM_FPS = 30;
 export const LONGFORM_DURATION = 75 * LONGFORM_FPS;
 export const SHORT_FPS = 30;

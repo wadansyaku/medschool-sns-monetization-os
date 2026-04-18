@@ -5,8 +5,11 @@ import { BridgeShort } from "./compositions/BridgeShort";
 import {
   LONGFORM_DURATION,
   LONGFORM_FPS,
+  LongformVideoSchema,
   SHORT_DURATION,
   SHORT_FPS,
+  ShortScriptSchema,
+  week01Longform,
   week01Shorts,
 } from "./data/week01";
 
@@ -20,6 +23,8 @@ export const RemotionRoot: React.FC = () => {
         fps={LONGFORM_FPS}
         width={1280}
         height={720}
+        defaultProps={week01Longform}
+        schema={LongformVideoSchema}
       />
       {week01Shorts.map((short) => (
         <Composition
@@ -31,6 +36,7 @@ export const RemotionRoot: React.FC = () => {
           width={1080}
           height={1920}
           defaultProps={short}
+          schema={ShortScriptSchema}
         />
       ))}
     </>
