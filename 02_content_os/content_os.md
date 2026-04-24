@@ -152,8 +152,34 @@
 
 - 週次パッケージは `02_content_os/packages/` 配下に増やす
 - ファイル名は `week_XX_topic_slug.md` 形式を使う
+- 新規作成時は `02_content_os/package_template.md` をコピーし、空欄を埋めてから制作へ進む
 - 1パッケージには、長尺・短尺・カルーセル・X 投稿をまとめる
 - 各パッケージの冒頭で `レイヤー` `対象` `登録理由` を明記する
 - `02_content_os/packages/` を企画の正本とし、`05_video_os/` は視覚 QA と render 用に従属させる
 - 投稿後の実績は必ず `03_analytics_os/post_log.csv` に残す
+- 週ごとの仮説と採用可否は `03_analytics_os/experiment_backlog.md` に残す
 - 動画化に使う scene data や render 設定は `05_video_os/` 側で管理する
+
+## 9. 実装済みパッケージ
+
+| 週 | 正本 | レイヤー | 動画OS | 役割 |
+| --- | --- | --- | --- | --- |
+| Week 01 | `02_content_os/packages/week_01_subject_allocation.md` | 高校理系ブリッジ | `W01Bridge*` | 理系再建の入口として、科目配分の全体像を作る |
+| Week 02 | `02_content_os/packages/week_02_math_bias.md` | 高校理系ブリッジ | `W02Bridge*` | Week 01 から回遊し、数学偏重の失速パターンを修正する |
+| Week 03 | `02_content_os/packages/week_03_study_os_before_memorization.md` | 医学学習OS | `W03Study*` | 暗記量ではなく、戻る場所と復習の型で受験後にも残る登録理由を作る |
+
+## 10. パッケージ QA gate
+
+- 長尺タイトルだけで、誰のどの悩みを扱うか分かるか
+- 冒頭 30 秒で、対象・悩み・結論のうち 2 つ以上が出ているか
+- 3 レイヤーのどれか 1 つに固定されているか
+- 短尺 4 本が同じ長尺の別角度になっているか
+- サムネと short の画面内文言が、長尺を見る理由を残しているか
+- 相談導線が主目的になっていないか
+- 医療助言、診断、治療判断に見える表現がないか
+
+## 11. シリーズ接続
+
+- Week 01-05 の回遊設計は `02_content_os/series_connection_map.md` に置く
+- Week 03 以降は、単発で伸ばすより `次に見る長尺` を固定してシリーズとして見せる
+- Week 03 の反応が弱い場合は、`医学学習OS` をやめるのではなく、タイトルと冒頭を具体化する

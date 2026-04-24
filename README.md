@@ -6,18 +6,32 @@
 
 - `01_strategy/strategy_hub.md`
   - ブランド定義、対象読者、チャネル役割、CTA、禁止領域、KPI をまとめた中枢ファイル
+- `01_strategy/implementation_roadmap.md`
+  - 大規模実装へ進むための批判的評価、batch 計画、品質 gate
 - `02_content_os/content_os.md`
   - コンテンツ柱、12週間ロードマップ、再利用ルール、制作チェックリスト
+- `02_content_os/package_template.md`
+  - 週次パッケージを量産するための正本テンプレート
 - `02_content_os/packages/week_01_subject_allocation.md`
   - `高校理系ブリッジ` の初週長尺として使える実戦パッケージ
+- `02_content_os/packages/week_02_math_bias.md`
+  - Week 01 から回遊させる数学偏重修正パッケージ
+- `02_content_os/packages/week_03_study_os_before_memorization.md`
+  - Week 02 から回遊させる医学学習OSの初回パッケージ
+- `02_content_os/series_connection_map.md`
+  - Week 01-05 の長尺回遊設計
 - `03_analytics_os/post_log.csv`
   - 投稿・登録・CTR・回遊・相談の補助指標を追うためのログ
+- `03_analytics_os/experiment_backlog.md`
+  - 週ごとの仮説、主要指標、採用可否を管理するログ
 - `03_analytics_os/weekly_review.md`
   - 週末レビューのテンプレート
 - `04_codex_os/codex_playbook.md`
   - Codex チャットで毎週どう回すかの運用手順
 - `04_codex_os/codex_prompts.md`
   - 週初企画、長尺台本、再利用、週末レビューの固定プロンプト集
+- `04_codex_os/content_guardrail_checklist.md`
+  - 医療境界、AI補助線、CTA過多、3レイヤー逸脱を出荷前に確認する gate
 - `04_codex_os/external_review_loop.md`
   - GitHub と Atlas を使って、外部レビューを週次運用に組み込む手順
 - `03_analytics_os/advice_log.md`
@@ -26,6 +40,8 @@
   - GitHub で週次パッケージをレビューするための PR テンプレート
 - `05_video_os/`
   - Remotion で長尺と短尺を生成する動画制作基盤
+  - `visual_qa_checklist.md` で still 確認の合否基準を管理する
+  - `video-packages.manifest.json` で still / render / validation の対象 composition を管理する
 
 ## 運用の基本単位
 
@@ -39,15 +55,16 @@
 ## 週次の回し方
 
 1. `01_strategy/strategy_hub.md` を確認して、今週もズレずに発信できる状態にする
-2. `04_codex_os/codex_prompts.md` の「週初企画」を使って今週の核テーマを確定する
-3. `04_codex_os/codex_prompts.md` の「長尺台本生成」と「再利用生成」で制作を進める
-4. 公開後の数値を `03_analytics_os/post_log.csv` に記録する
-5. 週末に `03_analytics_os/weekly_review.md` と `04_codex_os/codex_prompts.md` のレビュー用プロンプトを使って改善点を決める
+2. 大きく進める週は `01_strategy/implementation_roadmap.md` で今回の batch を決める
+3. `02_content_os/package_template.md` か既存 package を使って、今週の核テーマを正本化する
+4. `04_codex_os/codex_prompts.md` の「長尺台本生成」と「再利用生成」で制作を進める
+5. 公開後の数値を `03_analytics_os/post_log.csv` に、仮説の採否を `03_analytics_os/experiment_backlog.md` に記録する
+6. 週末に `03_analytics_os/weekly_review.md` と `04_codex_os/codex_prompts.md` のレビュー用プロンプトを使って改善点を決める
 
 ## 最初の60分でやること
 
 1. `01_strategy/strategy_hub.md` のプロフィール文と CTA 方針を見て、各アカウントの説明文を整える
-2. `02_content_os/packages/week_01_subject_allocation.md` を見て、`高校理系ブリッジ` の初週長尺と短尺4本を収録する
+2. `02_content_os/packages/week_01_subject_allocation.md` か `02_content_os/packages/week_02_math_bias.md` を見て、`高校理系ブリッジ` の長尺と短尺4本を収録する
 3. `03_analytics_os/post_log.csv` に今週分の行をコピーして、記録の土台を作る
 4. まず YouTube 長尺の視聴導線を整え、そのうえで必要なら二次 CTA を 1 つに絞る
 

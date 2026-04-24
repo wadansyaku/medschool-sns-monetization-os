@@ -111,11 +111,26 @@ Codex を `企画担当 + 台本担当 + 再利用担当 + 週次レビュー担
 
 1. `strategy_hub.md` を開いてブレを防ぐ
 2. 週初企画プロンプトで核テーマを確定する
-3. 長尺台本生成プロンプトで YouTube を先に作る
-4. 再利用生成プロンプトで短尺・カルーセル・Xへ分解する
-5. 必要なら `external_review_loop.md` に沿って Atlas へ方向性レビューを依頼する
-6. 投稿後の結果を `post_log.csv` に入力する
-7. 週末レビューで翌週テーマへ反映する
+3. 新規 package は `02_content_os/package_template.md` から作り、`02_content_os/packages/` に置く
+4. `content_guardrail_checklist.md` で旧テーマ化、医療境界、CTA 過多を確認する
+5. 長尺台本生成プロンプトで YouTube を先に作る
+6. 再利用生成プロンプトで短尺・カルーセル・Xへ分解する
+7. 必要なら `external_review_loop.md` に沿って Atlas へ方向性レビューを依頼する
+8. 投稿後の結果を `post_log.csv` に、仮説の採否を `experiment_backlog.md` に入力する
+9. 週末レビューで翌週テーマへ反映する
+
+## 大規模実装時の順序
+
+複数週のパッケージや動画OSをまとめて進める時は、`01_strategy/implementation_roadmap.md` を先に読み、以下の順序を崩さない。
+
+1. 正本 package を増やす
+2. Video OS の data props に落とす
+3. `05_video_os/video-packages.manifest.json` に composition ID と sourcePath を追加する
+4. still で視覚 QA する
+5. render script は manifest 経由で動かし、script 側へ Week 情報を直書きしない
+6. `post_log.csv` と `experiment_backlog.md` に検証行を追加する
+
+実装中に判断が割れたら、`登録理由になる長尺テーマか` を最優先にする。短尺の再生だけを取りにいく変更は見送る。
 
 ## 命名ルール
 

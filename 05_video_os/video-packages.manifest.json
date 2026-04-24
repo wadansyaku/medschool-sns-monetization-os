@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "week01",
+    "prefix": "W01Bridge",
+    "outPrefix": "w01",
+    "sourcePath": "02_content_os/packages/week_01_subject_allocation.md",
+    "longformId": "W01BridgeLong",
+    "thumbnailId": "W01BridgeThumbnail",
+    "shortIds": ["W01BridgeShort01", "W01BridgeShort02", "W01BridgeShort03", "W01BridgeShort04"],
+    "sceneCount": 5
+  },
+  {
+    "slug": "week02",
+    "prefix": "W02Bridge",
+    "outPrefix": "w02",
+    "sourcePath": "02_content_os/packages/week_02_math_bias.md",
+    "longformId": "W02BridgeLong",
+    "thumbnailId": "W02BridgeThumbnail",
+    "shortIds": ["W02BridgeShort01", "W02BridgeShort02", "W02BridgeShort03", "W02BridgeShort04"],
+    "sceneCount": 7
+  },
+  {
+    "slug": "week03",
+    "prefix": "W03Study",
+    "outPrefix": "w03",
+    "sourcePath": "02_content_os/packages/week_03_study_os_before_memorization.md",
+    "longformId": "W03StudyLong",
+    "thumbnailId": "W03StudyThumbnail",
+    "shortIds": ["W03StudyShort01", "W03StudyShort02", "W03StudyShort03", "W03StudyShort04"],
+    "sceneCount": 7
+  }
+]
