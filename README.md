@@ -42,6 +42,9 @@
   - Remotion で長尺と短尺を生成する動画制作基盤
   - `visual_qa_checklist.md` で still 確認の合否基準を管理する
   - `video-packages.manifest.json` で still / render / validation の対象 composition を管理する
+- `06_lesson_os/`
+  - 長尺動画と同じテーマの復習教材を、レビュー済みJSONから全問版と無料サンプルのHTML・PDF、販売下書きへ書き出す
+  - 数値を再計算し、不一致があれば出力を止める。実教材は公開repo外に保管する
 
 ## 運用の基本単位
 

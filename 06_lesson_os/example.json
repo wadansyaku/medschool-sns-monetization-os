@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": "fictional-card-example",
+  "title": "動作確認用：架空のカード配分",
+  "subtitle": "教材として販売するための原稿ではありません。",
+  "audience": "このコンパイラの動作を確認する人",
+  "layer": "高校理系ブリッジ",
+  "brand": "理系再建ラボ｜医学につながる理系",
+  "price_candidate_jpy": 0,
+  "longform": {
+    "title": "架空の割合の説明動画",
+    "reason": "同一テーマの長尺動画から、手を動かして復習する演習へ接続する動作例。"
+  },
+  "sections": [
+    {
+      "title": "サンプルの使い方",
+      "paragraphs": ["架空のカードを使った最小入力です。HTMLの解答開閉、無料部分の切り出し、数値チェックを試せます。"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "EX01",
+      "kind": "calculation",
+      "stem": "カードが10枚あり、赤いカードが2枚です。赤いカードは全体の何%ですか。",
+      "answer": "20%です。",
+      "explanation": "全体10枚に対する2枚の割合を、100倍して百分率に直します。",
+      "common_error": "全体と一部分を逆にしないようにします。",
+      "is_free": true,
+      "check": {"expression": "red / total * 100", "values": {"red": 2, "total": 10}, "expected": 20, "unit": "%", "tolerance": 0}
+    },
+    {
+      "id": "EX02",
+      "kind": "concept",
+      "stem": "枚数が増えても割合が同じになる例を一つ作ってください。",
+      "answer": "例：20枚のうち4枚が赤いカードです。",
+      "explanation": "全体も赤いカードも同じ倍率で増やせば割合は変わりません。",
+      "common_error": "全体だけを増やすと割合は変わります。",
+      "is_free": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "PY-ARITHMETIC",
+      "title": "Python Language Reference: Binary arithmetic operations（実装の算術構文確認用。上記の問題は架空例）",
+      "url": "https://docs.python.org/3/reference/expressions.html#binary-arithmetic-operations",
+      "accessed": "2026-10-17"
+    }
+  ],
+  "sales": {
+    "description": "動作確認用の架空例です。販売・公開を想定した教材ではありません。",
+    "includes": ["架空の2問と解説", "無料切り出しの動作例1問"],
+    "posts": ["同じ割合になる例を作る、という復習の流れを確認するための架空投稿文です。"]
+  }
+}
