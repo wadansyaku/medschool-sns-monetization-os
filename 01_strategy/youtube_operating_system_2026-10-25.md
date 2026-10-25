@@ -1,7 +1,7 @@
 # 理系再建ラボ — YouTube 運営オペレーティングシステム（2026-10-25）
 
 作成: Claude（戦略・収益化の助言役として）。前提は本日時点で確認できた事実のみ。推定には「推定」、二次情報には「二次」と付ける。
-関連: [strategy_hub.md](strategy_hub.md)（4月の設計）、[マネタイズ管理室/批判的レビュー](/Users/Yodai/マネタイズ管理室/批判的レビュー_2026-10-25.md)、[SNS 自動化の設計](/Users/Yodai/マネタイズ管理室/SNS自動化_リサーチとブレスト_2026-10-25.md)、[動画のコツ](/Users/Yodai/sns-video-pipeline/docs/VIDEO_TIPS.md)、制作基盤 `/Users/Yodai/sns-video-pipeline`。
+関連: [ニッチ選定と最初の100本](niche_and_first_100_videos_2026-10-25.md)、[strategy_hub.md](strategy_hub.md)（4月の設計）、[マネタイズ管理室/批判的レビュー](/Users/Yodai/マネタイズ管理室/批判的レビュー_2026-10-25.md)、[SNS 自動化の設計](/Users/Yodai/マネタイズ管理室/SNS自動化_リサーチとブレスト_2026-10-25.md)、[動画のコツ](/Users/Yodai/sns-video-pipeline/docs/VIDEO_TIPS.md)、制作基盤 `/Users/Yodai/sns-video-pipeline`。
 
 ---
 
